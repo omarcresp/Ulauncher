@@ -83,7 +83,7 @@ let
 
     buildInputs = [
       glib
-      gnome.adwaita-icon-theme
+      adwaita-icon-theme
       gtk-layer-shell
       gtk3
       libappindicator
