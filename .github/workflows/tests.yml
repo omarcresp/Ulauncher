@@ -25,6 +25,8 @@ jobs:
       - name: build preferences
         run: make prefs FORCE=1
       - uses: cachix/install-nix-action@v30
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - name: make nix-build
         run: make nix-build
         timeout-minutes: 5
